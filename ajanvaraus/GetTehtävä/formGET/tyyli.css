@@ -1,0 +1,24 @@
+form {
+    text-align: center;
+   
+    opacity: 0,5;
+
+}
+
+input {
+    background-color: rgba(240, 248, 255, 0);
+}
+
+select {
+    background-color: rgba(240, 248, 255, 0);
+}
+
+
+
+body {
+    background-image: url('kello.jpg');
+   }
+
+h1 {
+    text-align: center;
+}

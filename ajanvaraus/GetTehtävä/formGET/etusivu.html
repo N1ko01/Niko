@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="tyyli.css">
+    <title>Ajanvaraus</title>
+</head>
+<body>
+
+    <form action="./sivusto.html" method="get" target="_blank" onsubmit="return validateForm()">
+
+
+        <label for="email">Sähköposti:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+        <label for="aihe">valitse aihe:</label><br>
+        <select name="aihe" id="aihe" required>
+            <option hidden disabled selected value> : </option>
+            <option value="10min">10 min</option>
+            <option value="15min">15 min</option>
+            <option value="20min">20 min</option>
+        </select><br>
+        <br>
+        <label for="paikka">Valitse paikka</label><br>
+        <select name="paikka" id="paikka" required>
+            <option hidden disabled selected value> : </option>
+            <option value="paikka1">Paikka 1</option>
+            <option value="paikka2">Paikka 2</option>
+            <option value="paikka3">Paikka 3</option>
+        </select><br>
+        <br>
+        <label for="päivä">Valitse päivä:</label><br>
+        <input type="date" id="päivä" name="päivä" required><br>
+        <br>
+        <label>
+            <input type="radio" name="aika" value="13:00" required>13:00
+          </label>
+          <label>
+            <input type="radio" name="aika" value="14:00">14:00
+          </label>
+          <label>
+            <input type="radio" name="aika" value="15:00">15:00
+          </label><br>
+        <br>
+        <label for="ika">Ikä: </label><br>
+        <input type="text" name="ika" id="ika" required><br>
+        <br>
+        <input type="submit" value="Lähetä">
+            </form>
+</body>
+</html>

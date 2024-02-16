@@ -1,0 +1,15 @@
+body {
+    background-color: dimgray;
+    padding-left: 34%;
+    padding-right: 34%;
+    margin-top: 20%;
+}
+h1 {
+    color: rgb(60, 0, 255);
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}

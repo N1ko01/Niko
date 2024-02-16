@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./laskintyyli.css">
+    <script src="./itselaskin.js"></script>
+    <title>Laskin</title>
+</head>
+<body>
+    <h1>NELILASKIN</h1>
+<div class="tausta">
+<table class="yla">
+    <!--Lisätään laskimen näppäimet käyttäen <table>, jokaisesta kohdasta tehty myös nappi jota painettaessa suorittaa funktion JavaScriptissä-->
+    <tr>
+        <td><button id="ac" type="button" onclick="tyhjennys()">AC</button></td>
+        <td id="naytto"></td>
+    </tr>
+</table>
+<table class="ala">
+    <tr>
+        <td><button id="seiska" type="button" onclick="lisays('7')">7</button></td>
+        <td><button id="kasi" type="button" onclick="lisays('8')">8</button></td>
+        <td><button id="ysi" type="button" onclick="lisays('9')">9</button></td>
+        <td><button id="jako" type="button" onclick="lisays('/')">%</button></td>
+        <td><button id="kerto" type="button" onclick="lisays('*')">x</button></td>
+    </tr>
+    <tr>
+        <td><button id="neljä" type="button" onclick="lisays('4')">4</button></td>
+        <td><button id="viisi" type="button" onclick="lisays('5')">5</button></td>
+        <td><button id="kuusi" type="button" onclick="lisays('6')">6</button></td>
+        <td><button id="miinus" type="button" onclick="lisays('-')">-</button></td>
+        <td><button id="plus" type="button" onclick="lisays('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button id="yksi" type="button" onclick="lisays('1')">1</button></td>
+        <td><button id="kaksi" type="button" onclick="lisays('2')">2</button></td>
+        <td><button id="kolme" type="button" onclick="lisays('3')">3</button></td>
+        <td><button id="pilkku" type="button" onclick="lisays('.')">,</button></td>
+        <td><button id="delete" type="button" onclick="poisto('del')">⌫</button></td>
+    </tr>
+</table>
+<table class="pohja">
+    <tr>
+        <td><button id="nolla" type="button" onclick="lisays('0')">0</button></td>
+        <td><button id="yhtasuuri" type="button" onclick="yhtasuuri('=')">=</button></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
